@@ -14,6 +14,7 @@ Welcome to the **Ultimate Roadmap** to becoming a top-tier **Kernel Security Eng
 
 ### 📚 Resources
 - [Linux Journey](https://linuxjourney.com)
+- [Linux Full Tutorial](https://www.geeksforgeeks.org/linux-tutorial/)
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 - [Practical Guide to Linux Commands (Book)]
 
