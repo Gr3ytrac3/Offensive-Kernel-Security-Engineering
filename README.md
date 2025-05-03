@@ -50,6 +50,8 @@ Welcome to the **Ultimate Hybrid Roadmap**: A fusion of **Kernel Security Engine
 - Python (Scapy, automation, web scraping)
 - Bash (Scripting, automation)
 - C/C++ (Buffer overflows, malware development)
+- Rust
+- Assembly
 
 ### Libraries
 - Scapy, BeautifulSoup
