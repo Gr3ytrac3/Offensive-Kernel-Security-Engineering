@@ -1,6 +1,6 @@
 # 🛡️ Offensive Kernel Security Learning Tree
 
-This learning tree provides a structured progression path that combines Kernel Security Engineering and Red Team Offensive Security expertise. Each branch represents a core knowledge domain with detailed skills, resources, and projects organized by complexity level.
+This learning tree provides a structured progression path that combines **Kernel Security Engineering** and **Red Team Offensive Security expertise**. Each branch represents a core knowledge domain with detailed skills, resources, and projects organized by complexity level.
 
 ## 🌱 Root Knowledge: Fundamentals
 
