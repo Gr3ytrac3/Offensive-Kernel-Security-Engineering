@@ -181,7 +181,7 @@ Become a rare breed expert who merges low-level Linux/kernel mastery with elite 
 
 ---
 
-## 🏁 Your Journey
+## 🏁 The Journey
 
 "You’re not just a hacker. You’re an engineer of chaos and control — mastering the very core of machines to both defend and defeat."
 
