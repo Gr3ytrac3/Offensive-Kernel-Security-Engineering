@@ -1,190 +1,110 @@
-# 🛡️ Kernel & Offensive Security Expert Roadmap
+#  👾 RedKernel Offensive Security Master Roadmap
 
-> **Title**: Offensive Security Artisan — Builder of Digital Fortresses
-> **Focus**: Red Teaming x Kernel Security Engineering
-
----
-
-## 🚀 Vision
-
-Become a rare breed expert who merges low-level Linux/kernel mastery with elite offensive security skills — capable of both building and breaking at the deepest layers of modern systems.
+Welcome to my transformation into an **Offensive Kernel Security Engineer**. This is more than a roadmap—it's the forging of a cyber weapon through deep system mastery, red team precision, and relentless lab work. My primary hypervisor for this journey is **Proxmox VE**.
 
 ---
 
-## 🧱 Phase 1: Foundations
+## 🩸 Phase 1: Foundational Blood
 
-**Goal**: Master Linux, Networking, Programming, and Scripting — your base for everything else.
+**Books:**
+- Linux Basics for Hackers
+- Network Basics for Hackers
+- Gray Hat Hacking (1st Edition)
+- Black Hat Bash
 
-### Linux Mastery
+**Projects:**
+- Setup Proxmox VMs: Kali Linux + Ubuntu targets
+- Bash recon scripts
+- Manual reverse shell implementation
+- Customize `.bashrc` for speed and stealth
 
-* Filesystem Hierarchy, Shell, Permissions
-* Systemd, Processes, User Management
-* Bash/Terminal Workflow Mastery
-* File Descriptors, Pipes, Redirections
-* LVM, RAID, Disk Management
-
-### Networking Core
-
-* OSI Model & Protocols (TCP/IP, UDP, ICMP)
-* Subnetting, NAT, DNS, DHCP, ARP
-* Packet Analysis (Wireshark, tcpdump)
-* Linux Networking Tools (iptables, netstat, ss, etc.)
-* Hands-on Labs: TryHackMe, HackTheBox (Beginner Boxes)
-
-### Programming & Scripting
-
-* **C**: Pointers, Memory, Syscalls, File I/O, Processes
-* **Python**: OS, Sockets, Automation, Subprocess
-* **Bash**: CLI Tools, Automation Scripts
-* Git + GitHub Workflows
-
-### 🔧 Projects
-
-* Linux Troubleshooting CLI Cheatsheet
-* Python Port Scanner
-* Bash Automation Scripts (Backups, Recon)
+**Skills:**
+- Linux internals, TCP/IP stack, Bash scripting, buffer overflow intro
 
 ---
 
-## ⚙️ Phase 2: Offensive Security Core
+## 🔬 Phase 2: System Exploiter
 
-**Goal**: Learn how to attack systems, exploit vulnerabilities, and build red team capabilities.
+**Books:**
+- Gray Hat Hacking (3rd & 4th Editions)
+- Practical Binary Analysis
+- Black Hat Python
+- Rootkits and Bootkits
 
-### Tools & Techniques
+**Projects:**
+- Write a custom fuzzer in Python
+- Stack/heap exploit development
+- Use `gdb`, `pwndbg`, `Ghidra`, and `radare2` on ELF binaries
+- Create a Loadable Kernel Module (LKM) rootkit for Linux
+- Build Python-based C2 implants
 
-* Kali Linux / Parrot OS Setup
-* Metasploit, Nmap, Burp Suite, Empire
-* Enumeration & Privilege Escalation (Linux Focus)
-* Manual Exploitation (Buffer Overflows, Web Vulns)
-* Lateral Movement, Persistence, Exfiltration
-
-### Frameworks
-
-* MITRE ATT\&CK
-* Cyber Kill Chain
-* Red Teaming Workflow
-
-### Practical Labs
-
-* HackTheBox (Intermediate+ Boxes)
-* TryHackMe Offensive Security Paths
-* VulnHub + Manual Exploitation
-
-### 🔧 Projects
-
-* Custom Reverse Shell in C
-* Privilege Escalation Cheatsheet Repo
-* Mini Red Team Toolkit in Python
+**Lab Enhancements:**
+- Proxmox snapshot system for Windows targets
+- Debuggable custom Linux kernels for syscall/driver testing
 
 ---
 
-## 🔬 Phase 3: Kernel Development & Security
+## 🧬 Phase 3: Ghost in the Kernel
 
-**Goal**: Learn to read, build, and exploit the Linux kernel. Go deep.
+**Books:**
+- Gray Hat Hacking (5th–7th Editions)
+- Practical Malware Analysis
+- Windows Security Internals
+- How to Hack Like a Ghost
 
-### Kernel Development Core
-
-* Kernel Architecture (monolithic, modules)
-* Kernel Compilation & Debugging
-* Loadable Kernel Modules (LKMs)
-* Character Devices, Syscalls, Kernel Hacking
-
-### Kernel Security Concepts
-
-* Memory Protections: ASLR, NX, SMEP, KPTI
-* Linux Security Modules: SELinux, AppArmor
-* Kernel Exploits: UAF, Stack Overflow, Race Conditions
-* eBPF Basics, seccomp filters
-
-### Kernel Debugging Tools
-
-* QEMU + GDB + Pwndbg
-* ftrace, kprobes, crash
-
-### 🔧 Projects
-
-* Write an LKM Rootkit (for learning)
-* Vulnerable Kernel Module for Training
-* Custom Kernel Syscall (e.g., Stealthy Logger)
+**Projects:**
+- Write custom syscall hijackers
+- Build a stealth API-hooking LKM
+- Cloud attack lab (AWS/GCP testbed)
+- Develop a personal C2 framework in Python
+- Simulate APT campaigns: Evasion, lateral movement, privilege escalation
 
 ---
 
-## 🧠 Phase 4: Fusion & Adversary Simulation
+## 🧪 Proxmox Offensive Lab Blueprint
 
-**Goal**: Blend kernel and offensive skills into elite-level adversary simulation.
+**Hardware:**
+- 32GB+ RAM, SSD storage, Proxmox VE installed
 
-### Advanced Red Teaming
+**Lab Components:**
+- **Attacker VMs:** Kali Linux, Commando VM
+- **Target VMs:** Windows 10, Windows Server, Ubuntu, custom kernel Linux
+- **Containers (LXC):** Lightweight HTTP servers, DNS spoofing zones
+- **Snapshots & Clones:** For PoC testing, exploit replay, and rollback
 
-* Custom Implants, C2 Development
-* AV/EDR Evasion (via kernel-level techniques)
-* In-Memory Execution (Reflective Injection)
-* Cobalt Strike, Mythic, Sliver
-
-### Kernel-Level Attacks
-
-* Syscall Hooking, Inline Function Hooking
-* Kernel Panic Induction & Recovery
-* DKOM (Direct Kernel Object Manipulation)
-
-### Blue Team Awareness
-
-* Detecting LKM Rootkits
-* Kernel Hardening Techniques
-* Patch Diffing & CVE Reproduction
-
-### 🔧 Projects
-
-* Custom C2 Implant with Kernel Stealth Features
-* Kernel Exploit Reproduction Lab (Dirty Pipe, etc.)
-* LKM-based Keylogger with Stealth Detection Bypass
+**Essential Tools:**
+- Ghidra, radare2, gdb, pwndbg, AFL, Volatility, Wireshark, Sysinternals
+- Custom-built fuzzers, rootkits, privilege escalation scripts
 
 ---
 
-## 🏗️ Phase 5: Mastery & Elite Contributions
+## 🚀 GitHub Portfolio Plan
 
-**Goal**: Contribute to open source, present research, build reputation.
-
-### Real-World Integration
-
-* Contribute to the Linux Kernel (Security Modules, Bug Fixes)
-* Create Tools for Red Team Community (with kernel spin)
-* Capture the Flag (CTFs with kernel challenges)
-* Write & Publish Technical Research / Blogs
-
-### Final Badge-Worthy Projects
-
-* Offensive Kernel Security Framework
-* Adversary Simulation Lab in QEMU
-* Publish Rootkit Detection Bypass Research
+| 🔧 Repo | 📘 Description |
+|--------|----------------|
+| `redkernel-labs` | Personal exploit & malware analysis writeups |
+| `RedKernel-Rootkit` | Loadable Kernel Module that hides files/processes |
+| `GhostOps-C2` | Lightweight Red Team C2 in Python |
+| `FuzzForge` | Custom fuzzer for ELF & PE files |
+| `RedTeamOps-101` | Markdown-based blog: Offensive theory, labs, and PoCs |
+| `CVE-Research` | Real-world CVEs (privately disclosed + public PoCs) |
 
 ---
 
-## 🧭 Tools You’ll Master
+## 🏅 Certifications Roadmap (2025–2026)
 
-* `GDB`, `Pwndbg`, `QEMU`, `ftrace`, `Wireshark`, `Metasploit`, `Nmap`, `Burp Suite`, `Mythic`, `Sliver`, `gcc`, `make`, `objdump`, `strace`, `tcpdump`, `seccomp-tools`, `eBPF`, and more.
-
----
-
-## 🧠 Resources
-
-* Books:
-
-  * "Linux Kernel Development" — Robert Love
-  * "The Art of Exploitation" — Jon Erickson
-  * "Rootkits: Subverting the Windows Kernel" (applies conceptually)
-  * "Linux Hardening in Hostile Networks" — Kyle Rankin
-* Courses:
-
-  * Offensive Security: PWK/OSCP, OSEP
-  * Linux Kernel Exploitation by LiveOverflow
-  * pwn.college Kernel Tracks
+- [x] OSCP (core offense)
+- [ ] OSE / EXP-301 (exploit development, kernel focus)
+- [ ] CRTO / CRTP (red team infrastructure)
+- [ ] PNPT (practical pentest path)
+- [ ] Custom CVE + writeups
+- [ ] Bug bounty platform profile (HackerOne / Intigriti)
 
 ---
 
-## 🏁 The Journey
+## 🧠 Vision
 
-"You’re not just a hacker. You’re an engineer of chaos and control — mastering the very core of machines to both defend and defeat."
+> "I’m not here to follow tools. I’m here to *become* the tool—operating at the intersection of kernel security and red team offense."
 
-This is the badge. This is the path.
+Follow my journey as I build a fortress of skills from metal to memory.
 
-> **Own it. Build it. Break it. Repeat.**
