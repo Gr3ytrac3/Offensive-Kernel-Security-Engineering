@@ -93,7 +93,7 @@ Welcome to my transformation into an **Offensive Kernel Security Engineer**. Thi
 
 ## 🏅 Certifications Roadmap (2025–2026)
 
-- [x] OSCP (core offense)
+- [ ] OSCP (core offense)
 - [ ] OSE / EXP-301 (exploit development, kernel focus)
 - [ ] CRTO / CRTP (red team infrastructure)
 - [ ] PNPT (practical pentest path)
