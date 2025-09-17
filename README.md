@@ -109,11 +109,11 @@ See `/resources.md` for books, courses, repos (torvalds/linux, AFL++, syzkaller)
 ---
 
 ## Contact
-- Twitter: `@Cyberdev`  
+- Twitter: `@Cyberdev`
 - GitHub: `https://github.com/Gr3ytrac3`  
 - Email: `cyberdevhq@proton.me`
 
 ---
-
-> ⚠️ **Safety**: This repo is for learning and responsible research only. Follow legal & ethical guidelines for vulnerability research and disclosure.
+```
+> ⚠️ Safety: This repo is for learning and responsible research only. Follow legal & ethical guidelines for vulnerability research and disclosure.
 ```
