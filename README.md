@@ -1,4 +1,4 @@
-# 👾 Offensive Kernel Security Engineer & Platform Security Roadmap
+# 👾 Offensive Kernel Security Engineer & Platform Security Roadmap (In process)
 > I’m building a repeatable path from foundations ➜ kernel internals ➜ exploit development ➜ fuzzing & CVE research.  
 > Primary hypervisor: **Proxmox VE**. Lab-first, publish-later, responsibly-disclosed research.
 
