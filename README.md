@@ -1,110 +1,117 @@
-#  👾 RedKernel Offensive Security Master Roadmap
-
-Welcome to my transformation into an **Offensive Kernel Security Engineer**. This is more than a roadmap—it's the forging of a cyber weapon through deep system mastery, red team precision, and relentless lab work. My primary hypervisor for this journey is **Proxmox VE**.
-
----
-
-## 🩸 Phase 1: Foundational Blood
-
-**Books:**
-- Linux Basics for Hackers
-- Network Basics for Hackers
-- Gray Hat Hacking (1st Edition)
-- Black Hat Bash
-
-**Projects:**
-- Setup Proxmox VMs: Kali Linux + Ubuntu targets
-- Bash recon scripts
-- Manual reverse shell implementation
-- Customize `.bashrc` for speed and stealth
-
-**Skills:**
-- Linux internals, TCP/IP stack, Bash scripting, buffer overflow intro
+# 👾 Offensive Kernel Security Engineer & Platform Security Roadmap
+> I’m building a repeatable path from foundations ➜ kernel internals ➜ exploit development ➜ fuzzing & CVE research.  
+> Primary hypervisor: **Proxmox VE**. Lab-first, publish-later, responsibly-disclosed research.
 
 ---
 
-## 🔬 Phase 2: System Exploiter
+[![Roadmap Status](https://img.shields.io/badge/roadmap-in%20progress-ff0040)]()
+[![License](https://img.shields.io/badge/license-MIT-9D00FF)]()
 
-**Books:**
-- Gray Hat Hacking (3rd & 4th Editions)
-- Practical Binary Analysis
-- Black Hat Python
-- Rootkits and Bootkits
-
-**Projects:**
-- Write a custom fuzzer in Python
-- Stack/heap exploit development
-- Use `gdb`, `pwndbg`, `Ghidra`, and `radare2` on ELF binaries
-- Create a Loadable Kernel Module (LKM) rootkit for Linux
-- Build Python-based C2 implants
-
-**Lab Enhancements:**
-- Proxmox snapshot system for Windows targets
-- Debuggable custom Linux kernels for syscall/driver testing
+## Table of Contents
+- [About](#about)
+- [How to use this repo](#how-to-use-this-repo)
+- [Roadmap (high level)](#roadmap-high-level)
+- [Horizons & Milestones (detailed)](#horizons--milestones-detailed)
+- [Proxmox Offensive Lab Blueprint](#proxmox-offensive-lab-blueprint)
+- [Starter labs & Projects](#starter-labs--projects)
+- [Contribution & Code of Conduct](#contribution--code-of-conduct)
+- [Repo structure](#repo-structure)
+- [Resources & reading list](#resources--reading-list)
+- [Contact / Socials](#contact--socials)
 
 ---
 
-## 🧬 Phase 3: Ghost in the Kernel
-
-**Books:**
-- Gray Hat Hacking (5th–7th Editions)
-- Practical Malware Analysis
-- Windows Security Internals
-- How to Hack Like a Ghost
-
-**Projects:**
-- Write custom syscall hijackers
-- Build a stealth API-hooking LKM
-- Cloud attack lab (AWS/GCP testbed)
-- Develop a personal C2 framework in Python
-- Simulate APT campaigns: Evasion, lateral movement, privilege escalation
+## About
+This repo contains a structured, timeboxed plan for becoming an **Offensive Kernel Security Engineer**. It pairs focused learning goals with lab exercises, starter projects, and publication targets (writeups, PoCs, patches). Use it as a personal curriculum or follow along and contribute.
 
 ---
 
-## 🧪 Proxmox Offensive Lab Blueprint
-
-**Hardware:**
-- 32GB+ RAM, SSD storage, Proxmox VE installed
-
-**Lab Components:**
-- **Attacker VMs:** Kali Linux, Commando VM
-- **Target VMs:** Windows 10, Windows Server, Ubuntu, custom kernel Linux
-- **Containers (LXC):** Lightweight HTTP servers, DNS spoofing zones
-- **Snapshots & Clones:** For PoC testing, exploit replay, and rollback
-
-**Essential Tools:**
-- Ghidra, radare2, gdb, pwndbg, AFL, Volatility, Wireshark, Sysinternals
-- Custom-built fuzzers, rootkits, privilege escalation scripts
+## How to use this repo
+- Read the **Roadmap** for the high-level plan.  
+- Pick a lab from `/labs` and follow the lab README. Each lab is self-contained and reproducible in a VM.  
+- Use Issues to track progress and Projects (kanban) to move items from *Backlog → In Progress → Review → Done*.  
+- Follow the `CONTRIBUTING.md` before opening PRs or adding labs.
 
 ---
 
-## 🚀 GitHub Portfolio Plan
-
-| 🔧 Repo | 📘 Description |
-|--------|----------------|
-| `redkernel-labs` | Personal exploit & malware analysis writeups |
-| `RedKernel-Rootkit` | Loadable Kernel Module that hides files/processes |
-| `GhostOps-C2` | Lightweight Red Team C2 in Python |
-| `FuzzForge` | Custom fuzzer for ELF & PE files |
-| `RedTeamOps-101` | Markdown-based blog: Offensive theory, labs, and PoCs |
-| `CVE-Research` | Real-world CVEs (privately disclosed + public PoCs) |
+## Roadmap (high level)
+- **Horizon I**: Foundations — Linux, C, Assembly, scripting, basic fuzzing.  
+- **Horizon II**: Kernel internals — LKMs, debugging, kernel subsystems, ARM basics.  
+- **Horizon III**: Exploitation — kernel UAFs, race bugs, ROP, payload engineering.  
+- **Horizon IV**: Research & disclosure — fuzz campaigns, CVE reproductions, upstream contributions.
 
 ---
 
-## 🏅 Certifications Roadmap (2025–2026)
+## Horizons & Milestones (detailed)
+See `/roadmap/horizons.md` for a week-by-week breakdown, tasks, and success criteria.
 
-- [ ] OSCP (core offense)
-- [ ] OSE / EXP-301 (exploit development, kernel focus)
-- [ ] CRTO / CRTP (red team infrastructure)
-- [ ] PNPT (practical pentest path)
-- [ ] Custom CVE + writeups
-- [ ] Bug bounty platform profile (HackerOne / Intigriti)
+**Quick milestone examples**
+- M1: `lkm-hello` module: build + load + README (Horizon I, week 1)  
+- M2: `fuzz-utils` harness: AFL++ target + crash-capture (Horizon I, week 2)  
+- M3: Kernel debug flow: QEMU + GDB walk-through and crash triage (Horizon II, week 6)  
+- M4: PoC exploit for public CVE (lab-only, responsibly disclosed) (Horizon IV)
 
 ---
 
-## 🧠 Vision
+## Proxmox Offensive Lab Blueprint
+A short lab checklist is in `/labs/proxmox/README.md`. Key points:
+- Host: Proxmox VE (dedicated mini-PC).  
+- VMs: Kali (attacker), Ubuntu (target), Windows (target), minimal custom-kernel VM.  
+- Storage: NVMe for VM images, snapshots for safe recovery.  
+- Tools: Ghidra, radare2, gdb/kgdb, QEMU, pwndbg, AFL++, syzkaller.
 
-> "I’m not here to follow tools. I’m here to *become* the tool—operating at the intersection of kernel security and red team offense."
+---
 
-Follow my journey as I build a fortress of skills from metal to memory.
+## Starter labs & Projects (pick one)
+- `/labs/00-lkm-hello` — Minimal kernel module (Hello world) with Makefile and test script.  
+- `/labs/01-fuzz-harness` — Small C program designed for AFL++ with `run_fuzz.sh`.  
+- `/projects/fuzzforge` — Scaffold for a custom fuzzer or harness.  
+- `/writeups` — Publish lab results and triage notes.
 
+---
+
+## Contribution & Code of Conduct
+Contributions are welcome. Please read `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` before submitting PRs or issues. This repo is for **research & education only** — do not publish exploit code targeting active systems without responsible disclosure.
+
+---
+
+## Repo structure
+```
+.
+├─ README.md
+├─ roadmap/
+│  └─ horizons.md
+├─ labs/
+│  ├─ 00-lkm-hello/
+│  ├─ 01-fuzz-harness/
+│  └─ 02-qemu-gdb/
+├─ projects/
+│  ├─ fuzzforge/
+│  └─ redkernel-labs/
+├─ writeups/
+├─ docs/
+│  └─ proxmox-lab-setup.md
+├─ .github/
+│  ├─ ISSUE\_TEMPLATE/
+│  ├─ PULL\_REQUEST\_TEMPLATE.md
+│  └─ CONTRIBUTING.md
+└─ resources.md
+
+```
+
+---
+
+## Resources & reading list
+See `/resources.md` for books, courses, repos (torvalds/linux, AFL++, syzkaller), blogs (Project Zero, ZDI), and practice platforms.
+
+---
+
+## Contact
+- Twitter: `@Cyberdev`  
+- GitHub: `https://github.com/Gr3ytrac3`  
+- Email: `cyberdevhq@proton.me`
+
+---
+
+> ⚠️ **Safety**: This repo is for learning and responsible research only. Follow legal & ethical guidelines for vulnerability research and disclosure.
+```
