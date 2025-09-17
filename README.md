@@ -6,6 +6,8 @@
 
 [![Roadmap Status](https://img.shields.io/badge/roadmap-in%20progress-ff0040)]()
 [![License](https://img.shields.io/badge/license-MIT-9D00FF)](https://github.com/Gr3ytrac3/Kernel-Security-Engineer-Roadmap--Offensive-Security-Focus-/blob/4d20590fe3f37dc12680b6bcc9a54e89b97eaabe/LICENSE)
+[![Safe Usage](https://img.shields.io/badge/Safe%20Usage-Research%20%26%20Education-blue)](SAFE_USAGE.md)
+
 
 ## Table of Contents
 - [About](#about)
