@@ -1,5 +1,5 @@
-# 👾 Offensive Kernel Security Engineer & Platform Security Roadmap (In process)
-> I’m building a repeatable path from foundations ➜ kernel internals ➜ exploit development ➜ fuzzing & CVE research.  
+# Offensive Kernel Security Engineer & Platform Security Roadmap (In process)
+> I’m building a repeatable path from foundations ➜ kernel internals ➜ exploit development ➜ fuzzing & CVE research.
 > Primary hypervisor: **Proxmox VE**. Lab-first, publish-later, responsibly-disclosed research.
 
 ---
@@ -29,17 +29,17 @@ This repo contains a structured, timeboxed plan for becoming an **Offensive Kern
 ---
 
 ## How to use this repo
-- Read the **Roadmap** for the high-level plan.  
-- Pick a lab from `/labs` and follow the lab README. Each lab is self-contained and reproducible in a VM.  
-- Use Issues to track progress and Projects (kanban) to move items from *Backlog → In Progress → Review → Done*.  
+- Read the **Roadmap** for the high-level plan.
+- Pick a lab from `/labs` and follow the lab README. Each lab is self-contained and reproducible in a VM.
+- Use Issues to track progress and Projects (kanban) to move items from *Backlog → In Progress → Review → Done*.
 - Follow the `CONTRIBUTING.md` before opening PRs or adding labs.
 
 ---
 
 ## Roadmap (high level)
-- **Horizon I**: Foundations — Linux, C, Assembly, scripting, basic fuzzing.  
-- **Horizon II**: Kernel internals — LKMs, debugging, kernel subsystems, ARM basics.  
-- **Horizon III**: Exploitation — kernel UAFs, race bugs, ROP, payload engineering.  
+- **Horizon I**: Foundations — Linux, C, Assembly, scripting, basic fuzzing.
+- **Horizon II**: Kernel internals — LKMs, debugging, kernel subsystems, ARM basics.
+- **Horizon III**: Exploitation — kernel UAFs, race bugs, ROP, payload engineering.
 - **Horizon IV**: Research & disclosure — fuzz campaigns, CVE reproductions, upstream contributions.
 
 ---
@@ -48,26 +48,26 @@ This repo contains a structured, timeboxed plan for becoming an **Offensive Kern
 See `/roadmap/horizons.md` for a week-by-week breakdown, tasks, and success criteria.
 
 **Quick milestone examples**
-- M1: `lkm-hello` module: build + load + README (Horizon I, week 1)  
-- M2: `fuzz-utils` harness: AFL++ target + crash-capture (Horizon I, week 2)  
-- M3: Kernel debug flow: QEMU + GDB walk-through and crash triage (Horizon II, week 6)  
+- M1: `lkm-hello` module: build + load + README (Horizon I, week 1)
+- M2: `fuzz-utils` harness: AFL++ target + crash-capture (Horizon I, week 2)
+- M3: Kernel debug flow: QEMU + GDB walk-through and crash triage (Horizon II, week 6)
 - M4: PoC exploit for public CVE (lab-only, responsibly disclosed) (Horizon IV)
 
 ---
 
 ## Proxmox Offensive Lab Blueprint
 A short lab checklist is in `/labs/proxmox/README.md`. Key points:
-- Host: Proxmox VE (dedicated mini-PC).  
-- VMs: Kali (attacker), Ubuntu (target), Windows (target), minimal custom-kernel VM.  
-- Storage: NVMe for VM images, snapshots for safe recovery.  
+- Host: Proxmox VE (dedicated mini-PC).
+- VMs: Kali (attacker), Ubuntu (target), Windows (target), minimal custom-kernel VM.
+- Storage: NVMe for VM images, snapshots for safe recovery.
 - Tools: Ghidra, radare2, gdb/kgdb, QEMU, pwndbg, AFL++, syzkaller.
 
 ---
 
 ## Starter labs & Projects (pick one)
-- `/labs/00-lkm-hello` — Minimal kernel module (Hello world) with Makefile and test script.  
-- `/labs/01-fuzz-harness` — Small C program designed for AFL++ with `run_fuzz.sh`.  
-- `/projects/fuzzforge` — Scaffold for a custom fuzzer or harness.  
+- `/labs/00-lkm-hello` — Minimal kernel module (Hello world) with Makefile and test script.
+- `/labs/01-fuzz-harness` — Small C program designed for AFL++ with `run_fuzz.sh`.
+- `/projects/fuzzforge` — Scaffold for a custom fuzzer or harness.
 - `/writeups` — Publish lab results and triage notes.
 
 ---
@@ -110,7 +110,7 @@ See `/resources.md` for books, courses, repos (torvalds/linux, AFL++, syzkaller)
 
 ## Contact
 - Twitter: `@Cyberdev`
-- GitHub: `https://github.com/Gr3ytrac3`  
+- GitHub: `https://github.com/Gr3ytrac3`
 - Email: `cyberdevhq@proton.me`
 
 ---
